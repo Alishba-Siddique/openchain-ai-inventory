@@ -1,0 +1,1 @@
+{"version":3,"file":"logger.mjs","sourceRoot":"","sources":["logger.mts"],"names":[],"mappings":"AAAA,OAAO,IAAI,MAAM,MAAM,CAAC;AAExB,MAAM,CAAC,MAAM,MAAM,GAAG,IAAI,CAAC;IACzB,SAAS,EAAE;QACT,MAAM,EAAE,aAAa;QACrB,OAAO,EAAE,EAAE,QAAQ,EAAE,IAAI,EAAE;KAC5B;CACF,CAAC,CAAC"}
