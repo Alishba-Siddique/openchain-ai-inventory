@@ -1,0 +1,24 @@
+{
+  "name": "inventory",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/app.mts",
+    "build": "tsc",
+    "start": "node dist/app.mjs",
+    "lint": "eslint 'src/**/*.{ts,mts}'",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --config jest.config.cjs",
+    "ci": "npm run lint && npm test && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "cross-env": "^7.0.3",
+    "jest": "^30.0.5",
+    "ts-jest": "^29.4.1"
+  }
+}
