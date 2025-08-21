@@ -1,5 +1,6 @@
+#inventory/Dockerfile
 # Stage 1: Build
-FROM node:20-slim AS build
+FROM node:20-bullseye-slim AS build
 WORKDIR /usr/src/app
 
 COPY package*.json ./
@@ -11,7 +12,7 @@ COPY src ./src
 RUN npm run build
 
 # Stage 2: Production
-FROM node:20-slim
+FROM node:20-bullseye-slim
 WORKDIR /usr/src/app
 
 COPY package*.json ./

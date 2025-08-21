@@ -1,3 +1,7 @@
+// inventory/src/app.mts
+import dotenv from "dotenv";
+dotenv.config(); // <-- must be first
+
 import express from "express";
 import inventoryRoutes from "./api/inventory.routes.mjs";
 import { AppError } from "./errors/app-error.mjs";
@@ -25,4 +29,3 @@ connectDB().then(() => {
 });
 
 export default app;
- 

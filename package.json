@@ -4,11 +4,11 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node src/app.mts",
+    "dev": "node --loader ts-node/esm src/app.mts",
     "build": "tsc",
     "start": "node dist/app.mjs",
-    "lint": "eslint 'src/**/*.{ts,mts}'",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --config jest.config.cjs",
+    "lint": "eslint 'src/**/*.{ts,mts}'",
     "ci": "npm run lint && npm test && npm run build"
   },
   "keywords": [],
@@ -16,9 +16,15 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/dotenv": "^6.1.1",
     "@types/jest": "^30.0.0",
+    "@types/node": "^24.3.0",
     "cross-env": "^7.0.3",
     "jest": "^30.0.5",
     "ts-jest": "^29.4.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "pino-pretty": "^13.1.1"
   }
 }
